@@ -68,7 +68,7 @@ public class VisitControllerTests {
     }
 
     @Test
-    public void testShowVisits() throws Exception {
+    public void testShowVisits-hyper() throws Exception {
         mockMvc.perform(get("/owners/*/pets/{petId}/visits", TEST_PET_ID))
             .andExpect(status().isOk())
             .andExpect(model().attributeExists("visits"))
